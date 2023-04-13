@@ -55,7 +55,8 @@ namespace API.Controllers
             {
                 Username = user.UserName,
                 Token = _tokenService.CreateToken(user)
-            };
+             
+             };
         }
 
         private async Task<bool> UserExist(string username)

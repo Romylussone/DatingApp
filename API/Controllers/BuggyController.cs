@@ -47,7 +47,7 @@ namespace API.Controllers
         }
 
         [HttpGet("bad-request")]
-        public ActionResult<string> BadRequest()
+        public new ActionResult<string> BadRequest()
         {
             return BadRequest("This was not a good request");
         }
